@@ -1,0 +1,116 @@
+/* HeroSection.css */
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .header {
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    height: 100px;
+    mix-blend-mode: color-burn;
+    
+  }
+  
+  /* .login-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+  .login-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .project-heading {
+    text-align: center;
+    margin-top: 20%;
+    color: #fff;
+    font-size: xx-large
+  }
+  
+  .get-started {
+    position: absolute;
+    bottom: 23%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .get-started-btn {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 38px;
+    cursor: pointer;
+  }
+  
+  /* Add additional styling for interactive elements/animations as needed */
+  
+  .btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1.7rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+  
